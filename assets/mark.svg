@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <path id="z" d="M11 13h27l-4 5-16 14h15l-4 5H8l4-5 16-14H8z"/>
+    <radialGradient id="plate" cx="50%" cy="48%" r="66%">
+      <stop stop-color="#42240e"/>
+      <stop offset="1" stop-color="#1b1510"/>
+    </radialGradient>
+    <filter id="halo" x="-35%" y="-45%" width="170%" height="190%">
+      <feGaussianBlur stdDeviation="2.65"/>
+    </filter>
+    <filter id="glow" x="-24%" y="-30%" width="148%" height="160%">
+      <feGaussianBlur stdDeviation=".85"/>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="46" height="46" rx="7" fill="url(#plate)" stroke="#86501f" stroke-width="1.25"/>
+  <g fill="none" stroke-linejoin="round">
+    <use href="#z" stroke="#ff730d" stroke-width="6" filter="url(#halo)" opacity=".92"/>
+    <use href="#z" stroke="#ff9a16" stroke-width="3.8" filter="url(#glow)"/>
+    <use href="#z" stroke="#ffbd45" stroke-width="2.65"/>
+    <use href="#z" stroke="#fff2ca" stroke-width="1.55"/>
+  </g>
+</svg>

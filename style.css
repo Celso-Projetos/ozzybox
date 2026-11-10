@@ -1,31 +1,28 @@
 /* ==========================================================================
    OzzyBox V2 — Design System & Stylesheet
    Influências: Scrolltide Oddball (energia atlética/tática) + Nopal (hero push-in suave)
-   Paleta: Preto profundo, carvão tático, âmbar neon, ouro esportivo e tipografia de alto impacto.
+   Paleta: Preto e amarelo do logotipo OzzyBox, com superfícies em cinza neutro.
    ========================================================================== */
 
 :root {
   /* Cores do Canvas e Superfícies */
-  --canvas: #12100d;
-  --canvas-rgb: 18, 16, 13;
-  --panel: #1b1713;
-  --panel-elevated: #24201a;
-  --panel-card: #201c17;
-  --line: #3d352b;
-  --line-subtle: #2d261e;
+  --canvas: #010101;
+  --canvas-rgb: 1, 1, 1;
+  --panel: #141414;
+  --panel-elevated: #202020;
+  --panel-card: #191919;
+  --line: #3b3b3b;
+  --line-subtle: #292929;
 
-  /* Acentos de Marca: Ouro e Âmbar Neon */
-  --gold: #ffbf3c;
-  --gold-hover: #ffd477;
-  --amber-neon: #ff9a16;
-  --amber-glow: #ff730d;
-  --whatsapp: #25d366;
-  --whatsapp-dark: #1da851;
+  /* Amarelo do logotipo e variação para interação */
+  --gold: #eedf01;
+  --gold-rgb: 238, 223, 1;
+  --gold-hover: #fff04d;
 
   /* Tipografia e Cores de Texto */
-  --ink: #fff5e4;
-  --muted: #c8bcab;
-  --caption: #968c7e;
+  --ink: #fefefe;
+  --muted: #c5c5c5;
+  --caption: #a3a3a3;
 
   /* Fontes */
   --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
@@ -41,7 +38,7 @@
 
   /* Efeitos */
   --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.45);
-  --shadow-glow: 0 0 24px rgba(255, 154, 22, 0.28);
+  --shadow-glow: 0 0 24px rgba(var(--gold-rgb), 0.28);
 }
 
 /* Fontes locais preservadas da pasta assets/ */
@@ -181,7 +178,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 
 .button--primary:hover {
   background-color: var(--gold-hover);
-  box-shadow: 0 4px 16px rgba(255, 191, 60, 0.35);
+  box-shadow: 0 4px 16px rgba(var(--gold-rgb), 0.35);
 }
 
 .button--secondary {
@@ -191,7 +188,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 }
 
 .button--secondary:hover {
-  background-color: #2e2922;
+  background-color: #2b2b2b;
   border-color: var(--gold);
   color: var(--gold-hover);
 }
@@ -205,20 +202,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .button--outline:hover {
   border-color: var(--gold);
   color: var(--gold);
-  background-color: rgba(255, 191, 60, 0.06);
+  background-color: rgba(var(--gold-rgb), 0.06);
 }
 
 .button--whatsapp {
-  background-color: #1a4d2c;
-  color: #f1fcf4;
-  border-color: rgba(37, 211, 102, 0.4);
+  background-color: var(--panel-elevated);
+  color: var(--gold);
+  border-color: rgba(var(--gold-rgb), 0.5);
 }
 
 .button--whatsapp:hover {
-  background-color: #22643a;
-  border-color: var(--whatsapp);
-  color: #ffffff;
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25);
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--canvas);
+  box-shadow: 0 4px 16px rgba(var(--gold-rgb), 0.25);
 }
 
 .button--large {
@@ -246,7 +243,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
    TOP TICKER (Oddball athletic game-clock / status banner)
    ========================================================================== */
 .top-ticker {
-  background-color: #181410;
+  background-color: #101010;
   border-bottom: 1px solid var(--line-subtle);
   font-size: 0.82rem;
   padding-block: 0.45rem;
@@ -266,8 +263,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background-color: rgba(255, 154, 22, 0.15);
-  color: var(--amber-neon);
+  background-color: rgba(var(--gold-rgb), 0.15);
+  color: var(--gold);
   font-weight: 800;
   padding: 0.2rem 0.6rem;
   border-radius: var(--radius-full);
@@ -279,8 +276,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: var(--amber-neon);
-  box-shadow: 0 0 8px var(--amber-neon);
+  background-color: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
   animation: pulseDot 2s infinite ease-in-out;
 }
 
@@ -313,7 +310,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   position: relative;
   top: 0;
   z-index: 100;
-  background-color: rgba(18, 16, 13, 0.94);
+  background-color: rgba(var(--canvas-rgb), 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line-subtle);
@@ -464,9 +461,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 }
 
 .hero-location-pill {
-  background-color: rgba(255, 191, 60, 0.12);
+  background-color: rgba(var(--gold-rgb), 0.12);
   color: var(--gold);
-  border: 1px solid rgba(255, 191, 60, 0.35);
+  border: 1px solid rgba(var(--gold-rgb), 0.35);
 }
 
 .hero-modality-pill {
@@ -491,7 +488,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .hero-headline em {
   font-style: normal;
   color: var(--gold);
-  text-shadow: 0 0 28px rgba(255, 191, 60, 0.3);
+  text-shadow: 0 0 28px rgba(var(--gold-rgb), 0.3);
 }
 
 .hero-lead {
@@ -567,7 +564,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   font-size: 0.88rem;
   font-weight: 800;
   letter-spacing: 0.08em;
-  color: var(--amber-neon);
+  color: var(--gold);
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
@@ -639,8 +636,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 }
 
 .tactical-card--highlight {
-  border-color: rgba(255, 191, 60, 0.45);
-  background-color: #231e17;
+  border-color: rgba(var(--gold-rgb), 0.45);
+  background-color: var(--panel-card);
 }
 
 .tactical-number {
@@ -714,8 +711,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   align-items: stretch;
   justify-content: space-between;
   gap: 2rem;
-  background: linear-gradient(135deg, #2b241a 0%, #1c1813 100%);
-  border: 1px solid var(--amber-neon);
+  background: linear-gradient(135deg, var(--panel-elevated) 0%, var(--panel) 100%);
+  border: 1px solid var(--gold);
   border-radius: var(--radius-md);
   padding: 2.25rem clamp(1.5rem, 4vw, 3rem);
   margin-bottom: 4.5rem;
@@ -764,7 +761,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   font-family: var(--font-display);
   font-size: 0.82rem;
   font-weight: 800;
-  color: var(--amber-neon);
+  color: var(--gold);
   letter-spacing: 0.08em;
 }
 
@@ -809,7 +806,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .gallery-media-frame {
   width: 100%;
   overflow: clip;
-  background-color: #0c0a08;
+  background-color: #0a0a0a;
 }
 
 .gallery-media-frame img {
@@ -879,9 +876,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 }
 
 .plan-card--featured {
-  background: linear-gradient(180deg, #262018 0%, #1b1713 100%);
+  background: linear-gradient(180deg, var(--panel-elevated) 0%, #141414 100%);
   border-color: var(--gold);
-  box-shadow: 0 8px 30px rgba(255, 191, 60, 0.15);
+  box-shadow: 0 8px 30px rgba(var(--gold-rgb), 0.15);
 }
 
 .plan-featured-badge {
@@ -903,7 +900,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.06em;
-  color: var(--amber-neon);
+  color: var(--gold);
   margin-bottom: 0.4rem;
 }
 
@@ -1207,7 +1204,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 
 .review-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 191, 60, 0.45);
+  border-color: rgba(var(--gold-rgb), 0.45);
 }
 
 .review-stars {
@@ -1260,7 +1257,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   font-weight: 800;
   font-size: 1.25rem;
   color: var(--gold);
-  background-color: #2e261d;
+  background-color: #262626;
 }
 
 .author-details {
@@ -1433,7 +1430,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   border-radius: var(--radius-md);
   overflow: clip;
   border: 1px solid var(--line);
-  background-color: #0c0a08;
+  background-color: #0a0a0a;
 }
 
 .map-frame iframe {
@@ -1551,7 +1548,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
    RODAPÉ
    ========================================================================== */
 .footer {
-  background-color: #0c0a08;
+  background-color: #0a0a0a;
   padding-top: clamp(3.5rem, 6vw, 5rem);
   padding-bottom: 2rem;
   border-top: 1px solid var(--line-subtle);
@@ -1589,7 +1586,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   font-size: 0.95rem;
   font-weight: 800;
   letter-spacing: 0.08em;
-  color: var(--amber-neon);
+  color: var(--gold);
   margin-bottom: 1.25rem;
 }
 
@@ -1903,7 +1900,7 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
   min-block-size: 6rem;
   padding: 1rem;
   border-radius: .6rem;
-  background: #171412;
+  background: var(--canvas);
 }
 .benefit-logo img { inline-size: min(100%, 10.5rem); block-size: 3.4rem; object-fit: contain; }
 .benefit-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-block-start: auto; }

@@ -1,7 +1,7 @@
 /* ==========================================================================
    OzzyBox V2 — Design System & Stylesheet
    Influências: Scrolltide Oddball (energia atlética/tática) + Nopal (hero push-in suave)
-   Paleta: Preto e amarelo do logotipo OzzyBox, com superfícies em cinza neutro.
+   Paleta: Preto e amarelo vivo OzzyBox, com superfícies em cinza neutro.
    ========================================================================== */
 
 :root {
@@ -14,10 +14,10 @@
   --line: #3b3b3b;
   --line-subtle: #292929;
 
-  /* Amarelo do logotipo e variação para interação */
-  --gold: #eedf01;
-  --gold-rgb: 238, 223, 1;
-  --gold-hover: #fff04d;
+  /* Amarelo da marca e variação para interação */
+  --gold: #ffed00;
+  --gold-rgb: 255, 237, 0;
+  --gold-hover: #fff550;
 
   /* Tipografia e Cores de Texto */
   --ink: #fefefe;
@@ -263,7 +263,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background-color: rgba(var(--gold-rgb), 0.15);
+  background-color: var(--panel-card);
   color: var(--gold);
   font-weight: 800;
   padding: 0.2rem 0.6rem;
@@ -461,7 +461,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 }
 
 .hero-location-pill {
-  background-color: rgba(var(--gold-rgb), 0.12);
+  background-color: var(--panel-card);
   color: var(--gold);
   border: 1px solid rgba(var(--gold-rgb), 0.35);
 }

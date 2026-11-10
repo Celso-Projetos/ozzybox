@@ -2,7 +2,7 @@
   <defs>
     <path id="z" d="M11 13h27l-4 5-16 14h15l-4 5H8l4-5 16-14H8z"/>
     <radialGradient id="plate" cx="50%" cy="48%" r="66%">
-      <stop stop-color="#292700"/>
+      <stop stop-color="#252525"/>
       <stop offset="1" stop-color="#010101"/>
     </radialGradient>
     <filter id="halo" x="-35%" y="-45%" width="170%" height="190%">
@@ -12,11 +12,11 @@
       <feGaussianBlur stdDeviation=".85"/>
     </filter>
   </defs>
-  <rect x="1" y="1" width="46" height="46" rx="7" fill="url(#plate)" stroke="#8a8201" stroke-width="1.25"/>
+  <rect x="1" y="1" width="46" height="46" rx="7" fill="url(#plate)" stroke="#ffed00" stroke-opacity=".55" stroke-width="1.25"/>
   <g fill="none" stroke-linejoin="round">
-    <use href="#z" stroke="#eedf01" stroke-width="6" filter="url(#halo)" opacity=".92"/>
-    <use href="#z" stroke="#eedf01" stroke-width="3.8" filter="url(#glow)"/>
-    <use href="#z" stroke="#eedf01" stroke-width="2.65"/>
-    <use href="#z" stroke="#fffac0" stroke-width="1.55"/>
+    <use href="#z" stroke="#ffed00" stroke-width="6" filter="url(#halo)" opacity=".92"/>
+    <use href="#z" stroke="#ffed00" stroke-width="3.8" filter="url(#glow)"/>
+    <use href="#z" stroke="#ffed00" stroke-width="2.65"/>
+    <use href="#z" stroke="#fff9a6" stroke-width="1.55"/>
   </g>
 </svg>

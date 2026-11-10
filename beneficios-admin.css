@@ -1,7 +1,8 @@
+:root { --brand-yellow: #ffed00; }
 * { box-sizing: border-box; }
 body { margin: 0; background: #010101; color: #fefefe; font: 1rem/1.55 system-ui, sans-serif; color-scheme: dark; }
 main { max-width: 66rem; margin: auto; padding: clamp(1rem, 4vw, 3rem); }
-a { color: #eedf01; }
+a { color: var(--brand-yellow); }
 .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); margin-top: 1.5rem; }
 article { border: 1px solid #3b3b3b; border-radius: 1rem; padding: 1rem; background: #191919; overflow-wrap: anywhere; min-width: 0; }
 h1, h2 { line-height: 1.2; }
@@ -10,10 +11,10 @@ form { display: grid; gap: .85rem; max-width: 26rem; }
 label { display: grid; gap: .3rem; }
 input:not([type="checkbox"]) { width: 100%; min-width: 0; padding: .6rem; background: #010101; border: 1px solid #828282; border-radius: .45rem; }
 button, input { font: inherit; color: inherit; min-height: 44px; }
-button { background: #eedf01; color: #010101; border: 1px solid #eedf01; padding: .5rem 1rem; border-radius: .45rem; cursor: pointer; width: fit-content; }
-.secondary { color: #eedf01; background: transparent; }
+button { background: var(--brand-yellow); color: #010101; border: 1px solid var(--brand-yellow); padding: .5rem 1rem; border-radius: .45rem; cursor: pointer; width: fit-content; }
+.secondary { color: var(--brand-yellow); background: transparent; }
 .actions, .check { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; }
 .check { min-height: 44px; }
 .check input { inline-size: 1.15rem; min-height: 0; block-size: 1.15rem; }
 :focus-visible { outline: 2px solid #fefefe; outline-offset: 3px; }
-.notice { border-inline-start: 3px solid #eedf01; padding-inline-start: .75rem; }
+.notice { border-inline-start: 3px solid var(--brand-yellow); padding-inline-start: .75rem; }

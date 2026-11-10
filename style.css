@@ -1708,9 +1708,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .button > span, .faq-question > span:first-child { min-inline-size: 0; }
 .header .brand, .header-actions { flex-shrink: 0; }
 [hidden] { display: none !important; }
-.header .brand, .ticker-link { white-space: nowrap; }
-.header .brand { flex: none; max-width: 100%; gap: .4rem; font-size: clamp(1.55rem, 4vw, 2.15rem); }
-.header .brand img { width: 28px; height: 28px; }
+.ticker-link { white-space: nowrap; }
+.header .brand { flex: none; }
+.header .brand img { display: block; width: clamp(6.75rem, 18vw, 9rem); height: auto; }
 .header-cta-secondary, .header-cta-primary span, .ticker-text { display: none; }
 .header-cta-primary { padding-inline: .55rem; font-size: .8rem; }
 .ticker-inner { flex-wrap: wrap; column-gap: 1rem; row-gap: .15rem; }
@@ -1745,7 +1745,6 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
 @media (min-width: 601px) {
   .checklist-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .header-inner { min-height: 4.5rem; }
-  .header .brand img { width: 36px; height: 36px; }
   .header-cta-primary { padding-inline: 1.4rem; font-size: .95rem; }
   .header-cta-primary span { display: inline; }
 }
@@ -1798,7 +1797,6 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
 
 @media (min-width: 68rem) {
   .header-inner { flex-wrap: nowrap; gap: 1rem; }
-  .header .brand { gap: .75rem; }
   .header .nav, .header:not(.has-mobile-menu) .nav {
     display: flex;
     order: 0;

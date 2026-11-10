@@ -361,9 +361,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .nav {
   display: none;
   align-items: center;
-  flex-wrap: wrap;
   min-width: 0;
-  gap: clamp(1rem, 2vw, 1.75rem);
 }
 
 .nav a {
@@ -1792,18 +1790,35 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
 }
 
 @media (min-width: 1025px) {
-  .header .header-inner { gap: 1rem; }
-  .header .brand { gap: .75rem; }
-  .header .nav, .header:not(.has-mobile-menu) .nav { display: flex; order: 0; flex: 1 1 20rem; justify-content: center; padding-bottom: 0; }
-  .header .nav a { font-size: .92rem; }
-  .header.has-mobile-menu .mobile-menu { display: none; }
   .hero-shell { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: 2.5rem; }
   .hero-art-container { inset-inline-start: 38%; opacity: 1; }
   .plans-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .checklist-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 68rem) {
+  .header-inner { flex-wrap: nowrap; gap: 1rem; }
+  .header .brand { gap: .75rem; }
+  .header .nav, .header:not(.has-mobile-menu) .nav {
+    display: flex;
+    order: 0;
+    flex: 1 0 auto;
+    justify-content: center;
+    gap: clamp(.65rem, 1.15vw, 1.15rem);
+    padding-bottom: 0;
+  }
+  .header .nav a, .header:not(.has-mobile-menu) .nav a {
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    font-size: .92rem;
+    white-space: nowrap;
+  }
+  .header.has-mobile-menu .mobile-menu { display: none; }
+  .header-actions { flex-wrap: nowrap; }
+}
+
+@media (min-width: 80rem) {
   .header-cta-secondary { display: inline-flex; }
 }
 
@@ -1842,3 +1857,57 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
   .hero-headline { font-size: 1.8rem; }
   .hero-lead { margin-top: .3rem; }
 }
+.benefits-section {
+  padding-block: var(--section-space);
+  border-block-start: 1px solid var(--line);
+}
+.benefits-filter { max-inline-size: 32rem; }
+.benefits-filter label { display: block; font-weight: 700; margin-block-end: .4rem; }
+.benefits-filter input {
+  inline-size: 100%;
+  min-block-size: 48px;
+  padding: .65rem .9rem;
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  color-scheme: dark;
+}
+.benefits-filter input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.benefits-filter p, #benefits-status, .benefit-card p { color: var(--muted); }
+.benefits-filter p { margin-block: .5rem 1rem; }
+.benefits-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  max-inline-size: 65rem;
+  padding: 0;
+  margin-block: .75rem 0;
+  list-style: none;
+}
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+  max-inline-size: 26rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--panel);
+  overflow-wrap: anywhere;
+}
+.benefit-card h3, .benefit-card p { margin: 0; }
+.benefit-logo {
+  display: grid;
+  place-items: center;
+  min-block-size: 6rem;
+  padding: 1rem;
+  border-radius: .6rem;
+  background: #171412;
+}
+.benefit-logo img { inline-size: min(100%, 10.5rem); block-size: 3.4rem; object-fit: contain; }
+.benefit-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-block-start: auto; }
+.benefit-actions .button { min-block-size: 44px; white-space: normal; text-align: center; }
+.benefits-grid:empty { display: none; }

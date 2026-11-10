@@ -1,0 +1,18 @@
+[
+  {
+    "id": "wellhub",
+    "name": "Wellhub",
+    "aliases": "Gympass",
+    "logo": "assets/beneficios/wellhub.svg",
+    "url": "https://wellhub.com/pt-br/search/partners/centro-de-treinamento-ozzy-box-fatima/",
+    "accepted": true
+  },
+  {
+    "id": "totalpass",
+    "name": "TotalPass",
+    "aliases": "Total Pass",
+    "logo": "assets/beneficios/totalpass.svg",
+    "url": "https://totalpass.com/br/",
+    "accepted": true
+  }
+]

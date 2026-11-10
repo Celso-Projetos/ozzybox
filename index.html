@@ -8,9 +8,40 @@
   <meta name="theme-color" content="#12100d">
   <meta property="og:title" content="OzzyBox | Treino Híbrido em Pouso Alegre">
   <meta property="og:description" content="Força, condicionamento e comunidade em Pouso Alegre. Agende sua aula experimental e encontre o plano certo para a sua rotina.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="OzzyBox">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "Centro de Treinamento OzzyBox",
+    "description": "Centro de treinamento híbrido e cross training em Pouso Alegre, MG.",
+    "telephone": "+55 35 99936-2983",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Nazareto, 145, Bairro de Fátima",
+      "addressLocality": "Pouso Alegre",
+      "addressRegion": "MG",
+      "postalCode": "37554-172",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -22.2260515,
+      "longitude": -45.922969
+    },
+    "hasMap": "https://share.google/g6cbvBqnA2j05sSpQ",
+    "sameAs": [
+      "https://www.instagram.com/ctozzybox/",
+      "https://www.facebook.com/profile.php?id=61562041643680"
+    ]
+  }
+  </script>
   <script src="site.js" defer></script>
+  <script src="beneficios.js" defer></script>
   <title>OzzyBox | Treino Híbrido e Cross Training em Pouso Alegre</title>
 </head>
 <body id="inicio">
@@ -36,9 +67,10 @@
       <nav class="nav" aria-label="Navegação principal">
         <a href="#treinos">Treinos</a>
         <a href="#planos">Planos</a>
+        <a href="#convenios">Convênios</a>
         <a href="#primeira-aula">Aula experimental</a>
         <a href="#avaliacoes">Avaliações</a>
-        <a href="#visita">Como Chegar</a>
+        <a href="#visita">Como chegar</a>
         <a href="#faq">Dúvidas</a>
       </nav>
 
@@ -47,6 +79,7 @@
         <nav aria-label="Navegação em telas menores">
           <a href="#treinos">Treino híbrido</a>
           <a href="#planos">Planos</a>
+          <a href="#convenios">Convênios</a>
           <a href="#primeira-aula">Aula experimental</a>
           <a href="#avaliacoes">Avaliações</a>
           <a href="#visita">Como chegar</a>
@@ -120,9 +153,9 @@
           </ul>
         </div>
       </div>
-      <div class="hero-art-container" aria-hidden="true">
+      <div class="hero-art-container">
         <figure class="hero-art">
-          <img src="assets/mascote.webp" alt="" width="1254" height="1254" fetchpriority="high">
+          <img src="assets/mascote.webp" srcset="assets/mascote-800.webp 800w, assets/mascote.webp 1254w" sizes="(min-width: 1025px) 62vw, (min-width: 769px) 55vw, min(100vw, 576px)" alt="Mascote canguru da OzzyBox com bandana preta e amarela, ao lado do letreiro Tá Feito." width="1254" height="1254" fetchpriority="high">
         </figure>
         <div class="hero-backdrop-gradient"></div>
       </div>
@@ -224,7 +257,7 @@
           <div class="gallery-cards">
             <figure class="gallery-card gallery-card--wide">
               <div class="gallery-media-frame">
-                <img src="assets/murph.webp" alt="Grupo de praticantes com camisetas do desafio Murph reunidos em frente à fachada da OzzyBox." width="1672" height="941" loading="lazy" decoding="async">
+                <img src="assets/murph.webp" srcset="assets/murph-800.webp 800w, assets/murph.webp 1672w" sizes="(min-width: 769px) min(64vw, 840px), 92vw" alt="Grupo de praticantes com camisetas do desafio Murph reunidos em frente à fachada da OzzyBox." width="1672" height="941" loading="lazy" decoding="async">
               </div>
               <figcaption>
                 <div class="caption-title">Desafio Murph na OzzyBox</div>
@@ -234,7 +267,7 @@
 
             <figure class="gallery-card gallery-card--tall">
               <div class="gallery-media-frame">
-                <img src="assets/comunidade.webp" alt="Pôster da OzzyBox com atleta levantando halter e a frase Venha conhecer nossa comunidade." width="1120" height="1405" loading="lazy" decoding="async">
+                <img src="assets/comunidade.webp" srcset="assets/comunidade-800.webp 800w, assets/comunidade.webp 1120w" sizes="(min-width: 769px) min(29vw, 380px), 92vw" alt="Pôster da OzzyBox com atleta levantando halter e a frase Venha conhecer nossa comunidade." width="1120" height="1405" loading="lazy" decoding="async">
               </div>
               <figcaption>
                 <div class="caption-title">Pôster da Comunidade</div>
@@ -394,6 +427,23 @@
             Confirme os valores e as condições com a equipe da OzzyBox pelo WhatsApp <a href="https://wa.me/553599362983" target="_blank" rel="noopener noreferrer">(35) 99936-2983</a>.
           </p>
         </aside>
+      </div>
+    </section>
+
+    <section class="benefits-section" id="convenios" aria-labelledby="benefits-heading">
+      <div class="shell">
+        <header class="section-header">
+          <div class="section-tag section-tag--gold">BENEFÍCIOS FITNESS</div>
+          <h2 id="benefits-heading" class="section-title">Convênios e <em>Benefícios Aceitos</em></h2>
+        </header>
+        <div class="benefits-filter" hidden>
+          <label for="benefits-search">Convênios Aceitos</label>
+          <input id="benefits-search" type="search" placeholder="Ex.: Wellhub ou Gympass" aria-describedby="benefits-help">
+          <p id="benefits-help">Digite o nome do seu benefício para saber se ele é aceito na OzzyBox.</p>
+        </div>
+        <p id="benefits-status" role="status"></p>
+        <ul id="benefits-results" class="benefits-grid" aria-label="Benefícios encontrados"></ul>
+        <noscript><p>Consulte os convênios com a equipe da <a href="https://wa.me/553599362983">OzzyBox pelo WhatsApp</a>.</p></noscript>
       </div>
     </section>
 

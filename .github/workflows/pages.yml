@@ -29,14 +29,14 @@ jobs:
       - name: Preparar arquivos públicos
         env:
           SITE_PATH: ${{ steps.pages.outputs.base_path }}
-          SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
           mkdir public
           cp index.html 404.html style.css site.js beneficios.js beneficios.json robots.txt public/
           cp -R assets public/
           sed -i 's/src="beneficios.js"/src="beneficios.js" data-catalog="beneficios.json"/' public/index.html
           sed -i "s|href=\"/|href=\"${SITE_PATH}/|g" public/404.html
-          sed -i "/<\/head>/i\  <meta property=\"og:url\" content=\"${SITE_URL}/\">\n  <meta property=\"og:image\" content=\"${SITE_URL}/assets/compartilhamento.jpg\">" public/index.html
+          sed -i '/<\/head>/i\  <meta name="robots" content="noindex, follow">' public/index.html
+          printf 'User-agent: *\nDisallow:\n' > public/robots.txt
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

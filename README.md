@@ -19,7 +19,7 @@ Abra [http://127.0.0.1:8080/](http://127.0.0.1:8080/). O projeto usa HTML, CSS e
 - `site.js` controla o menu móvel, o efeito de aproximação e o compartilhamento da localização.
 - `assets/` reúne imagens, ícones, fontes e licenças das fontes.
 
-A página está em prévia e tem `noindex`. Antes de disponibilizar o site ao público, configure a hospedagem e revise a indexação. Valores, condições e matrícula são atendidos pela equipe no WhatsApp.
+
 
 ## Atualização responsiva
 
@@ -42,22 +42,15 @@ A página está em prévia e tem `noindex`. Antes de disponibilizar o site ao p�
 - Mantenha os controles principais visíveis e operáveis por toque e teclado. Em novos formulários, use rótulos associados, campos que caibam na tela e mensagens próximas aos campos. Preserve as alternativas para ações que dependem de permissões do navegador.
 - Antes de publicar, confira 320–390 px, tablet, desktop e orientação paisagem. Teste a navegação, o zoom do navegador e os fluxos principais em Chromium, Firefox e WebKit. Confira também o conteúdo essencial sem JavaScript.
 
-## Preparar a publicação
+## Publicação
 
-A [versão pública no GitHub Pages](https://celso-projetos.github.io/ozzybox/) é publicada pelo fluxo em `.github/workflows/pages.yml`. Ela usa o catálogo estático `beneficios.json` e pode ser compartilhada por link. A prévia tem `noindex` até a definição do domínio oficial. O painel administrativo requer uma hospedagem com PHP e não integra o pacote do GitHub Pages.
+- [Site oficial na Hostinger](https://ctozzybox.com.br/)
+- [Prévia estática no GitHub Pages](https://celso-projetos.github.io/ozzybox/)
+- [Histórico de versões](https://github.com/Celso-Projetos/ozzybox/commits/main/)
 
-A prévia local tem `noindex, nofollow`. O arquivo `robots.txt` permite rastreamento, de modo que o rastreador possa ler essa instrução. As seções com `#` pertencem à página inicial. A página 404 fica fora da indexação.
+A branch main publica a prévia estática pelo GitHub Actions. A prévia usa o catálogo inicial de convênios. O painel de convênios funciona na Hostinger com PHP.
 
-Ao definir a URL pública oficial:
-
-1. Use a mesma URL HTTPS da página inicial na tag canônica, no `og:url` e no `<loc>` do `sitemap.xml`. O sitemap deve listar apenas a página inicial.
-2. Use a URL HTTPS absoluta de `assets/compartilhamento.jpg` em `og:image`. A imagem JPEG tem 1200 × 1200 px. Inclua `og:image:alt` com uma descrição do mascote e teste a prévia de compartilhamento na URL pública.
-3. Adicione `Sitemap: <URL HTTPS do sitemap.xml>` ao `robots.txt`. Remova o `noindex, nofollow` da página inicial quando estiver pronta para aparecer nas buscas. Mantenha o `noindex` da 404.
-4. Envie `.htaccess`, `404.html` e `robots.txt` junto dos arquivos públicos para a raiz da hospedagem. Na Hostinger, essa pasta é `public_html`. Em outro provedor, configure o status 404 e os cabeçalhos no mecanismo equivalente. Na publicação manual, envie apenas os arquivos do site.
-5. Na URL pública, confirme o certificado HTTPS, os redirecionamentos para o domínio oficial, o status 404 e os cabeçalhos. Verifique a indexação e envie o sitemap na propriedade do Search Console, se houver acesso. O site ainda está sem tag GA4 própria. Se for configurada, valide os eventos de agendamento, orçamento e rotas no DebugView.
-
-O servidor local em `.preview/` reproduz a 404 e os cabeçalhos básicos. A hospedagem aplica as regras de produção do seu próprio servidor.
-
+Para publicar na Hostinger, copie os arquivos públicos do site para public_html, incluindo .htaccess, 404.html, robots.txt e sitemap.xml. Mantenha a URL oficial nos metadados e no sitemap. O envio automático de alterações da Hostinger ao GitHub ainda não está configurado.
 ## Convênios e benefícios
 
 - A seção pública fica em `/#convenios`. A pesquisa aceita nomes alternativos, como Gympass para Wellhub.

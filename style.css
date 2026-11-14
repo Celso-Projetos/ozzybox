@@ -1736,7 +1736,8 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
   border-top: 1px solid var(--line);
 }
 .bar-button { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 3.1rem; padding: .5rem .45rem; font-size: .9rem; font-weight: 800; border-radius: var(--radius-sm); text-align: center; }
-.bar-button--whatsapp { background: var(--panel-elevated); color: var(--ink); border: 1px solid var(--line); }
+.bar-button--whatsapp { background: #25D366; color: #fff; border: 0; border-radius: 50%; width: 3.1rem; min-width: 3.1rem; height: 3.1rem; min-height: 3.1rem; padding: 0; justify-self: center; }
+.bar-button--whatsapp .icon-inline { width: 1.65rem; height: 1.65rem; }
 .bar-button--primary { background: var(--gold); color: var(--canvas); }
 
 @media (min-width: 601px) {

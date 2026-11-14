@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://ctozzybox.com.br/sitemap.xml

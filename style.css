@@ -1665,9 +1665,36 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   margin: 0;
 }
 
-.back-to-top {
+.back-to-top,
+.footer-privacy-link {
   color: var(--muted);
   font-weight: 700;
+}
+
+.footer-privacy-link:hover,
+.footer-privacy-link:focus-visible {
+  color: var(--gold);
+}
+
+/* Página de Política de Privacidade */
+.legal-page {
+  max-width: 46rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.legal-page h2 {
+  margin: 2rem 0 0.5rem;
+  color: var(--gold);
+  font-size: 1.15rem;
+}
+
+.legal-page a {
+  color: var(--gold);
+}
+
+.legal-page ul {
+  padding-left: 1.25rem;
 }
 
 .back-to-top:hover {

@@ -31,9 +31,9 @@ jobs:
           SITE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |
           mkdir public
-          cp index.html 404.html style.css site.js beneficios.js beneficios.json robots.txt public/
+          cp index.html 404.html privacidade.html style.css site.js beneficios.js beneficios.json robots.txt public/
           cp -R assets public/
-          sed -i 's/src="beneficios.js"/src="beneficios.js" data-catalog="beneficios.json"/' public/index.html
+          sed -i 's/src="beneficios.js\([^"]*\)"/src="beneficios.js\1" data-catalog="beneficios.json"/' public/index.html
           sed -i "s|href=\"/|href=\"${SITE_PATH}/|g" public/404.html
           sed -i '/<\/head>/i\  <meta name="robots" content="noindex, follow">' public/index.html
           printf 'User-agent: *\nDisallow:\n' > public/robots.txt

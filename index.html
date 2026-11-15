@@ -7,6 +7,9 @@
   <link rel="canonical" href="https://ctozzybox.com.br/">
   <meta property="og:url" content="https://ctozzybox.com.br/">
   <meta property="og:image" content="https://ctozzybox.com.br/assets/compartilhamento.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:alt" content="Mascote canguru da OzzyBox ao lado do letreiro Tá Feito.">
   <meta name="theme-color" content="#010101">
   <meta property="og:title" content="OzzyBox | Treino Híbrido em Pouso Alegre">
@@ -14,15 +17,25 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="OzzyBox">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OzzyBox | Treino Híbrido em Pouso Alegre">
+  <meta name="twitter:image" content="https://ctozzybox.com.br/assets/compartilhamento.jpg">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261114">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ExerciseGym",
+    "@id": "https://ctozzybox.com.br/#academia",
     "name": "Centro de Treinamento OzzyBox",
+    "alternateName": "OzzyBox",
+    "url": "https://ctozzybox.com.br/",
+    "image": "https://ctozzybox.com.br/assets/compartilhamento.jpg",
+    "logo": "https://ctozzybox.com.br/assets/logo-ozzybox.png",
+    "priceRange": "R$ 39,90 – R$ 379,90",
+    "currenciesAccepted": "BRL",
     "description": "Centro de treinamento híbrido e cross training em Pouso Alegre, MG.",
-    "telephone": "+55 35 99936-2983",
+    "telephone": "+55-35-99936-2983",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rua Nazareto, 145, Bairro de Fátima",
@@ -36,15 +49,79 @@
       "latitude": -22.2260515,
       "longitude": -45.922969
     },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "06:00",
+        "closes": "21:15"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "11:00"
+      }
+    ],
     "hasMap": "https://share.google/g6cbvBqnA2j05sSpQ",
     "sameAs": [
       "https://www.instagram.com/ctozzybox/",
-      "https://www.facebook.com/profile.php?id=61562041643680"
+      "https://www.facebook.com/profile.php?id=61562041643680",
+      "https://linktr.ee/ctozzybox",
+      "https://share.google/g6cbvBqnA2j05sSpQ"
     ]
   }
   </script>
-  <script src="site.js" defer></script>
-  <script src="beneficios.js" defer></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Nunca fiz cross training ou treino híbrido antes. Vou conseguir acompanhar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na aula experimental, você pode conhecer a rotina do box. Conte à equipe se está começando ou voltando e pergunte como os exercícios podem ser ajustados ao seu nível."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como agendo e como funciona a confirmação da aula experimental?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na seção Aula experimental, escolha a Tecnofit para consultar horários e confirmar na plataforma ou fale com a equipe pelo WhatsApp para combinar a aula."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais são os valores dos planos e como consultar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os valores estão na seção Planos: do drop-in (R$ 39,90 por aula) ao plano mensal (R$ 379,90 por mês), com preço menor nos planos de maior duração. Em cada plano, o botão do WhatsApp abre uma mensagem pronta para a equipe confirmar condições de matrícula e formas de pagamento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que devo levar no meu primeiro treino?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Venha com roupa esportiva e traga sua garrafa de água. Se tiver outra dúvida sobre o que vestir ou levar, confirme com a equipe da OzzyBox antes da aula."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Onde fica o box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Estamos na Rua Nazareto, 145, no Bairro de Fátima em Pouso Alegre–MG (CEP 37554-172). Abra Como chegar para ver o mapa e escolher o aplicativo de rota."
+      }
+    }
+  ]
+}
+  </script>
+  <script src="site.js?v=20261114" defer></script>
+  <script src="beneficios.js?v=20261114" defer></script>
   <title>OzzyBox | Treino Híbrido e Cross Training em Pouso Alegre</title>
 </head>
 <body id="inicio">
@@ -91,7 +168,7 @@
       <div class="header-actions">
         <a class="button button--secondary header-cta-secondary" href="#planos">Consultar planos</a>
         <a class="button button--primary header-cta-primary" href="#primeira-aula">
-          Agendar aula <span aria-hidden="true">↗</span>
+          Agendar aula <span aria-hidden="true">↓</span>
         </a>
       </div>
     </div>
@@ -121,7 +198,7 @@
           <div class="hero-actions">
             <a class="button button--primary button--large hero-primary-action" href="#primeira-aula">
               <span>Agendar aula experimental</span>
-              <span class="btn-arrow" aria-hidden="true">↗</span>
+              <span class="btn-arrow" aria-hidden="true">↓</span>
             </a>
             <a class="button button--outline button--large hero-secondary-action" href="#planos">
               <span>Conhecer os planos</span>
@@ -235,7 +312,7 @@
           </div>
           <div class="trial-callout-action">
             <a class="button button--primary" href="#primeira-aula">
-              Agendar aula experimental <span aria-hidden="true">↗</span>
+              Agendar aula experimental <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>
@@ -301,49 +378,49 @@
             <div class="plan-card-tag">Preço promocional</div>
             <h3 class="plan-card-title">Plano anual</h3>
             <p class="plan-card-desc"><strong>R$ 289,90</strong> por mês</p>
-            <a class="button button--whatsapp plan-btn" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Plano%20anual%20por%20R%24%20289%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar Plano anual por R$ 289,90 por mês pelo WhatsApp">
+            <a class="button button--whatsapp plan-btn" href="https://wa.me/553599362983?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Plano%20anual%20por%20R%24%20289%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar Plano anual por R$ 289,90 por mês pelo WhatsApp" target="_blank" rel="noopener noreferrer">
               Consultar pelo WhatsApp
             </a>
           </article>
           <article class="plan-card">
             <h3 class="plan-card-title">Plano semestral</h3>
             <p class="plan-card-desc"><strong>R$ 339,90</strong> por mês</p>
-            <a class="button button--whatsapp plan-btn" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Plano%20semestral%20por%20R%24%20339%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar Plano semestral por R$ 339,90 por mês pelo WhatsApp">
+            <a class="button button--whatsapp plan-btn" href="https://wa.me/553599362983?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Plano%20semestral%20por%20R%24%20339%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar Plano semestral por R$ 339,90 por mês pelo WhatsApp" target="_blank" rel="noopener noreferrer">
               Consultar pelo WhatsApp
             </a>
           </article>
           <article class="plan-card">
             <h3 class="plan-card-title">Plano trimestral</h3>
             <p class="plan-card-desc"><strong>R$ 359,90</strong> por mês</p>
-            <a class="button button--whatsapp plan-btn" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Plano%20trimestral%20por%20R%24%20359%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar Plano trimestral por R$ 359,90 por mês pelo WhatsApp">
+            <a class="button button--whatsapp plan-btn" href="https://wa.me/553599362983?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Plano%20trimestral%20por%20R%24%20359%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar Plano trimestral por R$ 359,90 por mês pelo WhatsApp" target="_blank" rel="noopener noreferrer">
               Consultar pelo WhatsApp
             </a>
           </article>
           <article class="plan-card">
             <h3 class="plan-card-title">Plano mensal</h3>
             <p class="plan-card-desc"><strong>R$ 379,90</strong> por mês</p>
-            <a class="button button--whatsapp plan-btn" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Plano%20mensal%20por%20R%24%20379%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar Plano mensal por R$ 379,90 por mês pelo WhatsApp">
+            <a class="button button--whatsapp plan-btn" href="https://wa.me/553599362983?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Plano%20mensal%20por%20R%24%20379%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar Plano mensal por R$ 379,90 por mês pelo WhatsApp" target="_blank" rel="noopener noreferrer">
               Consultar pelo WhatsApp
             </a>
           </article>
           <article class="plan-card">
             <h3 class="plan-card-title">15 check-ins</h3>
             <p class="plan-card-desc"><strong>R$ 239,90</strong> por mês</p>
-            <a class="button button--whatsapp plan-btn" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%2015%20check-ins%20por%20R%24%20239%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar 15 check-ins por R$ 239,90 por mês pelo WhatsApp">
+            <a class="button button--whatsapp plan-btn" href="https://wa.me/553599362983?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%2015%20check-ins%20por%20R%24%20239%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar 15 check-ins por R$ 239,90 por mês pelo WhatsApp" target="_blank" rel="noopener noreferrer">
               Consultar pelo WhatsApp
             </a>
           </article>
           <article class="plan-card">
             <h3 class="plan-card-title">10 check-ins</h3>
             <p class="plan-card-desc"><strong>R$ 209,90</strong> por mês</p>
-            <a class="button button--whatsapp plan-btn" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%2010%20check-ins%20por%20R%24%20209%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar 10 check-ins por R$ 209,90 por mês pelo WhatsApp">
+            <a class="button button--whatsapp plan-btn" href="https://wa.me/553599362983?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%2010%20check-ins%20por%20R%24%20209%2C90%20por%20m%C3%AAs%20na%20OzzyBox." aria-label="Consultar 10 check-ins por R$ 209,90 por mês pelo WhatsApp" target="_blank" rel="noopener noreferrer">
               Consultar pelo WhatsApp
             </a>
           </article>
           <article class="plan-card">
             <h3 class="plan-card-title">Drop-in</h3>
             <p class="plan-card-desc"><strong>R$ 39,90</strong> por aula</p>
-            <a class="button button--whatsapp plan-btn" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Drop-in%20por%20R%24%2039%2C90%20por%20aula%20na%20OzzyBox." aria-label="Consultar Drop-in por R$ 39,90 por aula pelo WhatsApp">
+            <a class="button button--whatsapp plan-btn" href="https://wa.me/553599362983?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20Drop-in%20por%20R%24%2039%2C90%20por%20aula%20na%20OzzyBox." aria-label="Consultar Drop-in por R$ 39,90 por aula pelo WhatsApp" target="_blank" rel="noopener noreferrer">
               Consultar pelo WhatsApp
             </a>
           </article>
@@ -372,7 +449,7 @@
             </div>
           </div>
           <p class="checklist-note">
-            Confirme os valores e as condições com a equipe da OzzyBox pelo WhatsApp <a href="whatsapp://send?phone=553599362983">(35) 99936-2983</a>.
+            Confirme os valores e as condições com a equipe da OzzyBox pelo WhatsApp <a href="https://wa.me/553599362983" target="_blank" rel="noopener noreferrer">(35) 99936-2983</a>. Respondemos em até 20 minutos, no horário das aulas.
           </p>
         </aside>
       </div>
@@ -391,7 +468,7 @@
         </div>
         <p id="benefits-status" role="status"></p>
         <ul id="benefits-results" class="benefits-grid" aria-label="Benefícios encontrados"></ul>
-        <noscript><p>Consulte os convênios com a equipe da <a href="whatsapp://send?phone=553599362983">OzzyBox pelo WhatsApp</a>.</p></noscript>
+        <noscript><p>Consulte os convênios com a equipe da <a href="https://wa.me/553599362983" target="_blank" rel="noopener noreferrer">OzzyBox pelo WhatsApp</a>.</p></noscript>
       </div>
     </section>
 
@@ -475,11 +552,12 @@
               <span>Abrir agenda na Tecnofit</span>
               <span class="btn-arrow" aria-hidden="true">↗</span>
             </a>
-            <a id="trial-whatsapp" class="button button--whatsapp button--large" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20na%20OzzyBox.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F">
+            <a id="trial-whatsapp" class="button button--whatsapp button--large" href="https://wa.me/553599362983?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20na%20OzzyBox.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" rel="noopener noreferrer">
               <svg class="icon-inline" aria-hidden="true" focusable="false"><use href="assets/platform-icons.svg#whatsapp"/></svg>
               <span>Agendar pelo WhatsApp</span>
             </a>
             <span class="trial-note">Sem necessidade de cartão de crédito para a aula experimental</span>
+            <span class="trial-note response-time">Respondemos pelo WhatsApp em até 20 minutos, no horário das aulas.</span>
           </div>
         </div>
 
@@ -790,7 +868,7 @@
             </summary>
             <div class="faq-answer">
               <p>
-                Abra a seção <a href="#planos">Planos</a>, escolha o assunto e envie a mensagem pelo WhatsApp. A equipe pode informar as opções, os valores e as condições disponíveis.
+                Os valores estão na seção <a href="#planos">Planos</a>: do drop-in (R$ 39,90 por aula) ao plano mensal (R$ 379,90 por mês), com preço menor nos planos de maior duração. Em cada plano, o botão do WhatsApp abre uma mensagem pronta para a equipe confirmar condições de matrícula e formas de pagamento.
               </p>
             </div>
           </details>
@@ -802,7 +880,7 @@
             </summary>
             <div class="faq-answer">
               <p>
-                Se tiver dúvidas sobre o que vestir ou levar, confirme com a <a href="whatsapp://send?phone=553599362983">equipe da OzzyBox</a> antes da aula.
+                Venha com roupa esportiva e traga sua garrafa de água. Se tiver outra dúvida sobre o que vestir ou levar, confirme com a <a href="https://wa.me/553599362983" target="_blank" rel="noopener noreferrer">equipe da OzzyBox</a> antes da aula.
               </p>
             </div>
           </details>
@@ -821,8 +899,8 @@
         </div>
 
         <div class="faq-footer-help">
-          <span>Ainda tem alguma dúvida específica?</span>
-          <a class="button button--whatsapp button--small" href="whatsapp://send?phone=553599362983&amp;text=Ol%C3%A1%21%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20OzzyBox.">
+          <span>Ainda tem alguma dúvida específica? Respondemos em até 20 minutos, no horário das aulas.</span>
+          <a class="button button--whatsapp button--small" href="https://wa.me/553599362983?text=Ol%C3%A1%21%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20OzzyBox." target="_blank" rel="noopener noreferrer">
             <svg class="icon-inline" aria-hidden="true" focusable="false"><use href="assets/platform-icons.svg#whatsapp"/></svg>
             <span>Falar com a equipe no WhatsApp</span>
             <span class="btn-arrow" aria-hidden="true">↗</span>
@@ -860,7 +938,7 @@
             <span>Facebook</span>
             <span class="ext-arrow" aria-hidden="true">↗</span>
           </a>
-          <a class="footer-social-link" href="whatsapp://send?phone=553599362983">
+          <a class="footer-social-link" href="https://wa.me/553599362983" target="_blank" rel="noopener noreferrer">
             <svg class="icon-inline" aria-hidden="true" focusable="false"><use href="assets/platform-icons.svg#whatsapp"/></svg>
             <span>WhatsApp <small>(35) 99936-2983</small></span>
             <span class="ext-arrow" aria-hidden="true">↗</span>
@@ -882,7 +960,8 @@
         <span class="footer-heading">Atendimento</span>
         <p class="footer-hours">
           Agendamentos e consultas disponíveis pelos canais digitais.<br>
-          Atendimento de recepção via WhatsApp.
+          Atendimento de recepção via WhatsApp, com resposta em até 20 minutos.<br>
+          Aulas de segunda a sexta, das 06:00 às 20:15, e aos sábados, das 08:00 às 10:00.
         </p>
 
       </div>
@@ -892,19 +971,20 @@
       <p class="copyright">
         © 2026 OzzyBox. Todos os direitos reservados. Identidade visual, mascote e marcas pertencem à OzzyBox.
       </p>
+      <a class="footer-privacy-link" href="privacidade.html">Política de Privacidade</a>
       <a class="back-to-top" href="#inicio">Voltar ao topo ↑</a>
     </div>
   </footer>
 
   <!-- BARRA DE AÇÃO FIXA PARA CELULAR (Thumb-Friendly Bottom Action Bar) -->
   <aside class="mobile-action-bar" aria-label="Ações rápidas para celular">
-    <a class="bar-button bar-button--whatsapp" href="whatsapp://send?phone=553599362983">
+    <a class="bar-button bar-button--whatsapp" href="https://wa.me/553599362983" target="_blank" rel="noopener noreferrer" aria-label="Falar com a OzzyBox pelo WhatsApp">
       <svg class="icon-inline" aria-hidden="true" focusable="false"><use href="assets/platform-icons.svg#whatsapp"/></svg>
-
+      
     </a>
     <a class="bar-button bar-button--primary" href="#primeira-aula">
       <span>Agendar aula experimental</span>
-      <span class="btn-arrow" aria-hidden="true">↗</span>
+      <span class="btn-arrow" aria-hidden="true">↓</span>
     </a>
   </aside>
   <script>
@@ -915,7 +995,7 @@
       const slot = trialSlot.value;
       const message = `Olá! Gostaria de agendar uma aula experimental na OzzyBox. Tenho disponibilidade para ${slot}. Há vaga?`;
       trialWhatsApp.href = slot
-        ? `whatsapp://send?phone=553599362983&text=${encodeURIComponent(message)}`
+        ? `https://wa.me/553599362983?text=${encodeURIComponent(message)}`
         : trialWhatsAppDefault;
     });
   </script>

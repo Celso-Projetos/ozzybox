@@ -18,6 +18,14 @@ Abra [http://127.0.0.1:8080/](http://127.0.0.1:8080/). O projeto usa HTML, CSS e
 - `style.css` contém o layout responsivo.
 - `site.js` controla o menu móvel, o efeito de aproximação e o compartilhamento da localização.
 - `assets/` reúne imagens, ícones, fontes e licenças das fontes.
+- `privacidade.html` é a Política de Privacidade (LGPD), com link no rodapé.
+- `.htaccess` define a página 404, o redirecionamento do www, a compressão e o cache.
+
+## Publicação
+
+O site oficial fica na Hostinger, em `public_html` (ctozzybox.com.br). O GitHub Actions publica só uma prévia com `noindex` no GitHub Pages.
+
+O navegador guarda CSS e JS por 30 dias. Ao alterar `style.css`, `site.js` ou `beneficios.js`, troque o número `?v=` correspondente no `index.html`.
 
 
 

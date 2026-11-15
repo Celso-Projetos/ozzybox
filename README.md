@@ -25,7 +25,7 @@ Abra [http://127.0.0.1:8080/](http://127.0.0.1:8080/). O projeto usa HTML, CSS e
 
 O site oficial fica na Hostinger, em `public_html` (ctozzybox.com.br). O GitHub Actions publica só uma prévia com `noindex` no GitHub Pages.
 
-O navegador guarda CSS e JS por 30 dias. Ao alterar `style.css`, `site.js` ou `beneficios.js`, troque o número `?v=` correspondente no `index.html`.
+O navegador confere CSS e JS no servidor a cada visita, então alterações em `style.css`, `site.js` e `beneficios.js` aparecem na hora, sem trocar números de versão. Imagens e fontes ficam guardadas por 7 dias. Para trocar uma imagem na hora, envie-a com um nome novo e atualize a referência no `index.html`.
 
 
 

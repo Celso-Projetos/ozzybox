@@ -34,7 +34,7 @@
       actions.append(provider);
     }
     item.append(tile, element('h3', '', platform.name),
-      element('p', '', 'Aceito na OzzyBox · Pouso Alegre, MG'), actions);
+      element('p', '', 'Aceito no Ozzy Box · Pouso Alegre, MG'), actions);
     return item;
   }
 

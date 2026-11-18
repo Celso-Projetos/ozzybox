@@ -1,5 +1,5 @@
 /**
- * OzzyBox V2 — Interatividade e Melhorias Progressivas
+ * Ozzy Box V2 — Interatividade e Melhorias Progressivas
  * - Efeito de aproximação suave do mascote (Nopal push-in)
  * - Compartilhamento nativo de localização e fallback para cópia
  * - Respeito integral a prefers-reduced-motion e navegação por teclado
@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const shareUrlInput = document.getElementById('share-url-input');
 
   const locationUrl = shareUrlInput ? shareUrlInput.value : 'https://www.google.com/maps/search/?api=1&query=Centro%20de%20Treinamento%20Ozzy%20Box%2C%20Rua%20Nazareto%2C%20145%2C%20Bairro%20de%20F%C3%A1tima%2C%20Pouso%20Alegre%20-%20MG&query_place_id=ChIJD-mU_TrHy5QRb8AGiYAL5Ig';
-  const shareTitle = 'Centro de Treinamento OzzyBox — Pouso Alegre';
-  const shareText = 'OzzyBox: Rua Nazareto, 145, Bairro de Fátima, Pouso Alegre–MG (Treino Híbrido e Cross Training). Veja a localização no mapa:';
+  const shareTitle = 'Centro de Treinamento Ozzy Box — Pouso Alegre';
+  const shareText = 'Ozzy Box: Rua Nazareto, 145, Bairro de Fátima, Pouso Alegre–MG (Treino Híbrido e Cross Training). Veja a localização no mapa:';
 
   // Habilitar botão de compartilhamento nativo em navegadores compatíveis (ex.: mobile)
   if (btnShare && navigator.share) {

@@ -12,6 +12,8 @@
     return node;
   }
 
+  const planTerms = { wellhub: ['Gympass', 'Silver+', 'Silver Plus', 'Wellhub Silver+'], totalpass: ['Total Pass', 'TP3', 'TotalPass TP3'] };
+
   function card(platform) {
     const item = element('li', 'benefit-card');
     const tile = element('div', 'benefit-logo');
@@ -54,8 +56,8 @@
       const accepted = platforms.filter((platform) => platform.accepted);
       function render() {
         const query = simplify(search.value.trim());
-        const matches = query ? accepted.filter(({ name, aliases }) =>
-          [name, ...aliases.split(',')].some((label) => simplify(label).includes(query))
+        const matches = query ? accepted.filter(({ id, name, aliases }) =>
+          [name, ...(aliases || '').split(','), ...(planTerms[id] || [])].some((label) => simplify(label).includes(query))
         ) : accepted;
         status.textContent = matches.length === 1 ? '1 benefício encontrado.'
           : matches.length > 1 ? matches.length + ' benefícios encontrados.'

@@ -1939,6 +1939,6 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
 .community-block .gallery-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.5rem, 2vw, 1rem); }
 .community-block .gallery-card { border-radius: 1.1rem; }
 .community-block .gallery-media-frame { aspect-ratio: 1; }
-.community-block .gallery-media-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.community-block .gallery-media-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .community-block .gallery-card figcaption { padding: clamp(.65rem, 2vw, 1rem); }
 .community-block .caption-title { font-family: var(--font-body); font-size: clamp(.8rem, 1.5vw, 1.1rem); line-height: 1.4; text-transform: none; overflow-wrap: anywhere; }

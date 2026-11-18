@@ -1938,6 +1938,6 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
 /* Quatro fotos visíveis em uma grade compacta. */
 .team-gallery { width: 100%; margin-inline: 0; }
 .team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.4rem, 1.5vw, .75rem); }
-.team-slide { min-width: 0; margin: 0; overflow: hidden; border-radius: .65rem; background: #111; }
-.team-slide img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center 48%; background: #111; }
-.team-slide figcaption { padding: .5rem .6rem; font-size: clamp(.65rem, 1.6vw, .8rem); line-height: 1.35; }
+.team-slide { min-width: 0; margin: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: .85rem; background: #111; }
+.team-slide img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; background: #111; }
+.team-slide figcaption { padding: .85rem; font-size: clamp(.75rem, 1.6vw, .95rem); line-height: 1.5; overflow-wrap: anywhere; }

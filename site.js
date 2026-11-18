@@ -152,21 +152,3 @@ document.addEventListener('DOMContentLoaded', () => {
   updateHeaderOffset();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const track = document.querySelector('.team-track');
-  if (!track) return;
-  const controls = document.querySelector('.team-controls');
-  const slides = Array.from(track.children);
-  const position = controls.querySelector('.team-position');
-  controls.hidden = false;
-  controls.querySelectorAll('[data-team-step]').forEach((button) => {
-    button.addEventListener('click', () => {
-      const current = Math.round(track.scrollLeft / track.clientWidth);
-      const next = (current + Number(button.dataset.teamStep) + slides.length) % slides.length;
-      track.scrollTo({ left: next * track.clientWidth, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-    });
-  });
-  track.addEventListener('scroll', () => {
-    position.textContent = 'Foto ' + (Math.round(track.scrollLeft / track.clientWidth) + 1) + ' de ' + slides.length;
-  }, { passive: true });
-});

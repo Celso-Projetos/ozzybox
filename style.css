@@ -1936,7 +1936,7 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
 .benefits-grid:empty { display: none; }
 
 /* Cartões de comunidade com proporções uniformes. */
-.community-block .gallery-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.6rem, 2vw, 1rem); }
+.community-block .gallery-cards { grid-template-columns: minmax(0, 1fr); max-width: 46rem; gap: 1rem; }
 .community-block .gallery-card { border-radius: 1.1rem; }
 .community-block .gallery-media-frame { aspect-ratio: 4 / 3; }
 .community-block .gallery-media-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 48%; }

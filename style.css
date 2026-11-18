@@ -1936,7 +1936,7 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
 .benefits-grid:empty { display: none; }
 
 /* Quatro fotos visíveis em uma grade compacta. */
-.team-gallery { width: min(100%, 34rem); margin-inline: auto; }
+.team-gallery { width: min(100%, 34rem); margin-inline: 0 auto; }
 .team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.4rem, 1.5vw, .75rem); }
 .team-slide { min-width: 0; margin: 0; overflow: hidden; border-radius: .65rem; background: #111; }
 .team-slide img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; background: #111; }

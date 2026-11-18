@@ -1936,9 +1936,10 @@ body.show-mobile-actions { padding-bottom: calc(5.5rem + env(safe-area-inset-bot
 .benefits-grid:empty { display: none; }
 
 /* Fotos da comunidade com enquadramento integral. */
+.team-carousel { width: min(100%, 40rem); margin-inline: auto; }
 .team-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; border-radius: 1rem; background: #111; }
 .team-slide { flex: 0 0 100%; min-width: 0; margin: 0; scroll-snap-align: start; }
-.team-slide img { display: block; width: 100%; height: clamp(24rem, 65vh, 42rem); object-fit: contain; background: #111; }
+.team-slide img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; background: #111; }
 .team-slide figcaption { padding: 1rem; text-align: center; }
 .team-controls:not([hidden]) { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1rem; }
 .team-controls button { min-width: 3rem; min-height: 3rem; }

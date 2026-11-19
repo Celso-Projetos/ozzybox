@@ -336,6 +336,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   color: var(--ink);
 }
 
+.brand-text { color: var(--gold); }
+
 .brand-text strong {
   color: var(--gold);
   font-weight: 800;
